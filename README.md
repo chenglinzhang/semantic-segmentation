@@ -13,7 +13,7 @@ The final program is implemented in Tensorflow using a Fully Convolutional Netwo
 
 [image1]: ./images/umm_000046.png "example result"
 [image2]: ./images/animation.gif "animated result"
-[image3]: ./images/fnc_schema.png "FCN model"
+[image3]: ./images/fcn_schema.png "FCN model"
 
 ![alt text][image1] <br/>
 
