@@ -10,11 +10,13 @@ This project is to recognize and semantically segment the roads for self driving
 The final program is implemented in Tensorflow using a Fully Convolutional Network (FCN). It has successfully labeled the pixels of roads on the testing images. Example results are in the following. 
 
 [//]: # (Image References)
-[image1]: ./images/animation.gif "animated result"
-[image2]: ./images/umm_000046.png "example result"
+
+[image1]: ./images/umm_000046.png "example result"
+[image2]: ./images/animation.gif "animated result"
 [image3]: ./images/fnc_schema.png "FCN model"
 
 ![alt text][image1] <br/>
+
 ![alt text][image2] <br/>
 
 ### Essentials
@@ -29,7 +31,7 @@ Tensorflow `saved_model.loader` loads a pre-trained VGG16 model. This is the fir
 
 The layers function implements the second half of the FCN. The outputs of VGG layer7, layer4, and layer3 are wired the same way as the schema from the FCN paper in the following.
 
-![alt text][image2] <br/>
+![alt text][image3] <br/>
 
 VGG layer7, layer4, and layer3 outputs are wired to 4x4 and 1x1 convolution layers, and upsampled to a 16x16 convolution layer. Two skip layers are also added to recover some fine-grained spatial information.
 
